@@ -1,0 +1,17 @@
+{
+  "name": "provoz-website-2",
+  "version": "1.0.0",
+  "description": "Portfolio website of provoz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Subham Sengupta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
