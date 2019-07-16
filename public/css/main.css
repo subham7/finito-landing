@@ -2023,11 +2023,12 @@ body.mobile-nav-active #mobile-nav-toggle {
       .feature-area:after {
         display: none; } }
   .retailer .single-feature {
-    height: 240px;
+    height: 280px;
     background: #fff;
     padding: 40px 30px;
     text-align: center;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px;
   }
   .feature-area .single-feature {
     height: 360px;
@@ -3328,4 +3329,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 500px;
   width: auto;
   margin-bottom: 60px;
+}
+
+.fact-box img {
+  height: 60px;
+  width: auto;
 }
