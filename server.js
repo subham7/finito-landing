@@ -19,9 +19,13 @@ app.get("/", function(req, resp) {
   resp.sendFile(path.join(__dirname, "public", "index.html"))
 })
 
-app.get("/:page", function(req, resp) {
-  resp.sendFile(path.join(__dirname, "public", `${req.params.page}.html`))
+app.get("/contact", function(req, resp) {
+  resp.sendFile(path.join(__dirname, "public", "contact.html"))
 })
+
+// app.get("/:page", function(req, resp) {
+//   resp.sendFile(path.join(__dirname, "public", `${req.params.page}.html`))
+// })
 
 app.listen(port, function() {
   console.log(`Server started at ${port}`)
