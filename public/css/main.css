@@ -1934,7 +1934,9 @@ body.mobile-nav-active #mobile-nav-toggle {
       font-size: 35px; } }
   @media (max-width: 767px) {
     .home-banner-content h1 {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+
+    }
 .home-banner-content p {
   margin-bottom: 45px; }
 
@@ -3337,6 +3339,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 500px;
   width: auto;
   margin-bottom: 60px;
+}
+
+ @media screen and (max-width: 767px) { 
+  .retailer-img-cont img {
+    height: 160px;
+  }
 }
 
 .fact-box img {
