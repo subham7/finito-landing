@@ -290,7 +290,7 @@
 					</div>
 				</div>
 				<div class="retailer-img-cont">
-					<img src="img/RetailerBenefits.png" alt="">
+					<img src="img/RetailerBenefits.png" class="mg-fluid" alt="">
 				</div>
 					<div class="row">
 						<div class="col-lg-3 col-md-6">
@@ -461,7 +461,7 @@
 					</div>
 				</div>
 				<div class="col-lg-8">
-					<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
+					<form id="contactForm" class="form-area contact-form text-right">
 						<div class="row">
 							<div class="col-lg-6 form-group">
 								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
@@ -482,7 +482,7 @@
 									type="text" />
 							</div>
 							<div class="col-lg-6 form-group">
-								<input name="company" placeholder="Enter your company" onfocus="this.placeholder = ''"
+								<input name="companyName" placeholder="Enter your company" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = 'Enter your company'" class="common-input mb-20 form-control" required=""
 									type="text" />
 	
@@ -491,7 +491,7 @@
 							</div>
 							<div class="col-lg-12 d-flex justify-content-between">
 								<div class="alert-msg" style="text-align: left;"></div>
-								<button class="primary-btn" style="float: right;">
+								<button class="primary-btn" id="contactBtn" style="float: right;">
 									Send Message
 								</button>
 							</div>
