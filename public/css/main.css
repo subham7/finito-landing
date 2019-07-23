@@ -3205,7 +3205,7 @@ body.mobile-nav-active #mobile-nav-toggle {
       margin-bottom: 30px; } }
   .footer-area .single-footer-widget h4 {
     color: #fff;
-    margin-bottom: 35px; }
+    margin-bottom: 5px; }
     @media (max-width: 1024px) {
       .footer-area .single-footer-widget h4 {
         font-size: 18px; } }
@@ -3227,7 +3227,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .footer-area .single-footer-widget input {
     height: 40px;
     border: none;
-    width: 80% !important;
+    width: 320px;
     font-weight: 300;
     background: #f9f9ff;
     color: #222222;
