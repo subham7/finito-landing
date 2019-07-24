@@ -491,11 +491,31 @@ $(document).ready(function() {
       }, {})
 
     $.ajax({
-      url: "http://gofinito.com/api/v1/contact",
+      url: "http://142.93.222.40/api/v1/contact",
       type: "POST",
       data: data,
       success: function(resp) {
-        console.log(resp)
+        alert("Thank you")
+      }
+    })
+    e.preventDefault()
+  })
+
+  // Post request for newsletter
+  $("#newsletterBtn").click(function(e) {
+    var data = $("#newsletterForm")
+      .serializeArray()
+      .reduce(function(obj, item) {
+        obj[item.name] = item.value
+        return obj
+      }, {})
+
+    $.ajax({
+      url: "http://142.93.222.40/api/v1/requestnewsletter",
+      type: "POST",
+      data: data,
+      success: function(resp) {
+        alert("Thank you")
       }
     })
     e.preventDefault()

@@ -290,7 +290,7 @@
 					</div>
 				</div>
 				<div class="retailer-img-cont">
-					<img src="img/RetailerBenefits.png" class="mg-fluid" alt="">
+					<img src="img/RetailerBenefits.png" class="img-fluid" alt="">
 				</div>
 					<div class="row">
 						<div class="col-lg-3 col-md-6">
@@ -480,7 +480,12 @@
 								<input name="city" placeholder="Enter your city" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = 'Enter your city'" class="common-input mb-20 form-control" required=""
 									type="text" />
+
+									<input name="address" placeholder="Enter your address" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Enter your address'" class="common-input mb-20 form-control" required="" type="text" />
+
 							</div>
+							
 							<div class="col-lg-6 form-group">
 								<input name="companyName" placeholder="Enter your company" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = 'Enter your company'" class="common-input mb-20 form-control" required=""
@@ -796,14 +801,13 @@
 						<h4>Newsletter</h4>
 						<p>Stay tuned for a new shopping experience</p>
 						<div class="form-wrap" id="mc_embed_signup">
-							<form target="_blank"
-								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-								method="get" class="form-inline" style="display: inline-flex;">
-								<input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
+							<form target="_blank" id="newsletterForm"
+							 class="form-inline" style="display: inline-flex;">
+								<input class="form-control" name="email" placeholder="Your Email Address" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = 'Your Email Address '" required="" type="email">
-								<button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
+								<button class="click-btn btn btn-default" id="newsletterBtn"><span class="lnr lnr-arrow-right"></span></button>
 								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+									<input tabindex="-1" value="" type="text">
 								</div>
 
 								<div class="info"></div>
