@@ -481,6 +481,40 @@ $(document).ready(function() {
       .ajaxChimp()
   })
 
+  function message(msg, type) {
+    var element = ""
+    switch (type) {
+      case "success":
+        element = `
+				<div class="alert alert-success alert-dismissible fade show" role="alert">
+					${msg}
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+      `
+        break
+
+      case "error":
+        element = `
+				<div class="alert alert-danger alert-dismissible fade show" role="alert">
+          There was an error. Please try again.
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+      `
+        break
+
+      default:
+        element = ""
+    }
+    $("body").append(element)
+    setTimeout(() => {
+      $(".alert").remove()
+    }, 3000)
+  }
+
   // Post request for contact form
   $("#contactBtn").click(function(e) {
     var data = $("#contactForm")
@@ -495,7 +529,10 @@ $(document).ready(function() {
       type: "POST",
       data: data,
       success: function(resp) {
-        alert("Thank you")
+        message("<strong>Success!</strong> We will get back to you.", "success")
+      },
+      error: function(err) {
+        message("", "Error")
       }
     })
     e.preventDefault()
@@ -515,7 +552,11 @@ $(document).ready(function() {
       type: "POST",
       data: data,
       success: function(resp) {
-        alert("Thank you")
+        message("<strong>Success!</strong>", "success")
+      },
+      error: function(err) {
+        console.log(err)
+        message("", "error")
       }
     })
     e.preventDefault()

@@ -657,6 +657,14 @@ td, th {
 .alert-msg {
   color: #008000; }
 
+  .alert {
+    position: fixed;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 20px;
+    z-index: 1000;
+  }
+
 .p1-gradient-bg, .buttons.gray:hover, .primary-btn, .feature-area .single-feature .title .lnr, .testimonials-area .owl-thumb-item.active .overlay-grad, .testimonials-area .owl-thumb-item .overlay-grad:hover, .single-price:hover .price-btn, .top-category-widget-area .single-cat-widget:hover .overlay-bg, .post-content-area .single-post .primary-btn:hover, .blog-pagination .page-item.active .page-link, .blog-pagination .page-link:hover, .widget-wrap .newsletter-widget .bbtns, .footer-area .single-footer-widget .click-btn, .footer-area .footer-bottom .footer-social a:hover {
   background-image: -moz-linear-gradient(0deg, #46dbf9 0%, #204be3 100%);
   background-image: -webkit-linear-gradient(0deg, #46dbf9 0%, #204be3 100%);

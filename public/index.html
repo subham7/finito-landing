@@ -29,6 +29,39 @@
 	<link rel="stylesheet" href="css/hexagons.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144574527-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-144574527-1');
+	</script>
+
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v3.3'
+			});
+		};
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- Your customer chat code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="1122641987930237" theme_color="#0084ff"
+		logged_in_greeting="Hi! Welcome to Finito! How can we help you?"
+		logged_out_greeting="Hi! Welcome to Finito! How can we help you?">
+	</div>
+
 </head>
 
 <body>
@@ -74,7 +107,7 @@
 					<h1>
 						Fly through<br> queues like a PRO
 					</h1>
-					<p>Superheroes don't have to wait in line. Why should you you? Skip queues using Finito! Scroll down to know how.</p>
+					<p>Superheroes don't have to wait in line. Why should you? Skip queues using Finito! Scroll down to know how.</p>
 					<div class="download-button d-flex flex-row justify-content-start">
 						<a href="#contact">
 						<div class="buttons dark flex-row d-flex">
@@ -219,7 +252,7 @@
 					Convenient
 					</h1>
 					<p>
-					Don't wast your time standing in a queue. Simple pick the product you like and you're good to go!
+					Don't waste your time standing in a queue. Simple pick the product you like and you're good to go!
 					</p>
 					<!-- <a class="primary-btn text-uppercase" href="#">Get Details</a> -->
 				</div>
