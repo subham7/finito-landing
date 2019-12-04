@@ -19,8 +19,8 @@ app.get("/", function(req, resp) {
   resp.sendFile(path.join(__dirname, "public", "index.html"))
 })
 
-app.get("/contact", function(req, resp) {
-  resp.sendFile(path.join(__dirname, "public", "contact.html"))
+app.get("/privacypolicy", function(req, resp) {
+  resp.sendFile(path.join(__dirname, "public", "privacypolicy.html"))
 })
 
 // app.get("/:page", function(req, resp) {
